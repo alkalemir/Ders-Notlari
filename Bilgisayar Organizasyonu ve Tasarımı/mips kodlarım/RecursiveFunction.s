@@ -21,7 +21,7 @@
 		
 		lw $a0,sayi # Daha sonra bu sayiyi kullanmak özere lw komutu ile tekrar hafizadan getirdik.
 		jal FaktoriyelHesapla  # girdigimiz sayinin faktoriyelini hesaplama uzere dallaniyoruz.
-		sw $v0,sonuc # FaktoriyelHesapla metodunun en son sonucu v0 registerine getiriliyor.
+		sw $v0,sonuc # FaktoriyelHesapla metodunun en son sonucu v0 registeri ile sonuc etiketine kaydediliyor.
 		
 		li $v0,4   # Ekrana String ifademiz yazdiriliyor.
 		la $a0,EkranaSonucYaz
